@@ -6,6 +6,10 @@ module Api
         render json: Cat.includes(:hobbies), include: ['hobbies']
       end
 
+      def data
+
+      end
+
       def show
         render json: Cat.find(params[:id]), include: ['hobbies']
       end
